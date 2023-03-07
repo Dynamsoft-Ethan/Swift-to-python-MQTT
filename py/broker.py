@@ -14,14 +14,11 @@ config = {
         }
     },
     'sys_interval': 10,
-    'topic-check': {
-        'enabled': False
-    },
     "topic-check":{
         "enabled": False,
         "acl":{
-            "anonymous" : ["topic/#", "..."],
-            "user_name": ["topic/#", "..."]
+            "anonymous" : ["topic/#"],
+            "user_name": ["topic/#"]
         }
     }
 }
