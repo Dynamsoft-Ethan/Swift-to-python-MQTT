@@ -1,9 +1,10 @@
 # publisher
 import paho.mqtt.client as mqtt
+from host_address import host_ip, port
 
 client = mqtt.Client()
 # your ip and port
-client.connect('192.168.8.207', 1883)
+client.connect(host=host_ip, port=port)
 
 while True:
     message = input("message: ")
