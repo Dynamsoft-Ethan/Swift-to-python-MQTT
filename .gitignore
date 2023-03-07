@@ -2,3 +2,4 @@
 swift/HelloWorldSwift.xcworkspace
 swift/Podfile.lock
 swift/Pods
+py/__pycache__

@@ -2,6 +2,9 @@
 
 Turn your phones into a remote barcode scanner that scans barcodes to desktop devices.
 
+## recommand version
+python 3.8
+
 ## Installation
 
 1. python install:
@@ -14,7 +17,7 @@ Turn your phones into a remote barcode scanner that scans barcodes to desktop de
 or:
 ```
     cd ./py
-    pip install -r requirement.txt
+    python -m pip install -r requirement.txt
 ```
 
 2. swift install:
@@ -23,7 +26,8 @@ or:
    pod install
 ```
 
-3. define your server ip & port in `./py/host_address.py` and `./swift/HelloWorldSwift/ViewController.swift`
+3. define your server ip & port in `./py/host_address.py` and `./swift/HelloWorldSwift/ViewController.swift
+`
 
 > **Note:** The IP on my laptop is `192.168.8.207` thus I am using same IP in the project. By convention, the port should be `1883`
 
