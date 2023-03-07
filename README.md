@@ -7,17 +7,21 @@ Turn your phones into a remote barcode scanner that scans barcodes to desktop de
 1. python install:
 
 `cd ./py`
+
 `pipenv shell`
+
 `pipenv install`
 
 or
 
 `cd ./py`
+
 `pip install -r requirrment.txt`
 
 2. swift install:
 
 `cd ./swift`
+
 `pod install`
 
 3. define your server ip/port in ./py/host_address.py and ./swift/HelloWorldSwift/ViewController.swift
@@ -27,6 +31,7 @@ or
 ## run
 
 `cd ./py`
+
 `python ./run.py`
 
 ## video demo
