@@ -28,11 +28,13 @@ or:
 > **Note:** The IP on my laptop is `192.168.8.207` thus I am using same IP in the project. By convention, the port should be `1883`
 
 ## run:
-
+1. python
 ```
     cd ./py
     python ./run.py
 ```
+2. swift
+connect your iOS device and run `./swift/HelloWorldSwift/HelloWorldSwift.xcworkspace` 
 
 ## video demo
 
