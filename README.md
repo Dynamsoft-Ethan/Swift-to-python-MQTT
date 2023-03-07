@@ -25,5 +25,13 @@ pod install
 
 > **Note:** The IP on my laptop is 192.168.8.207 thus I am using same IP in the project. By convention, the port should be 1883
 
+## run
+
+`
+cd ./py
+python ./run.py
+`
+
+## video demo
 
 <https://tst.dynamsoft.com/team/ethan/github/pythonswift.mp4>
