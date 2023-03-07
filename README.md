@@ -23,9 +23,9 @@ or:
    pod install
 ```
 
-3. define your server ip/port in ./py/host_address.py and ./swift/HelloWorldSwift/ViewController.swift
+3. define your server ip & port in `./py/host_address.py` and `./swift/HelloWorldSwift/ViewController.swift`
 
-> **Note:** The IP on my laptop is 192.168.8.207 thus I am using same IP in the project. By convention, the port should be 1883
+> **Note:** The IP on my laptop is `192.168.8.207` thus I am using same IP in the project. By convention, the port should be `1883`
 
 ## run:
 
