@@ -25,7 +25,5 @@ pod install
 
 > **Note:** The IP on my laptop is 192.168.8.207 thus I am using same IP in the project. By convention, the port should be 1883
 
-<video width="640" height="360" controls>
-  <source src="https://tst.dynamsoft.com/team/ethan/github/pythonswift.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+<https://tst.dynamsoft.com/team/ethan/github/pythonswift.mp4>
