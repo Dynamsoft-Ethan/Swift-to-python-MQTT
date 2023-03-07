@@ -5,10 +5,12 @@ import config
 import pyperclip
 import sys
 import time
+from host_address import host_ip, port
+
 
 client = mqtt.Client()
 #your ip and port
-client.connect('192.168.8.207', 1883)
+client.connect(host=host_ip, port=port)
 
 def on_connect(client, userdata, flags, rc):
     print("Connected to a broker!")

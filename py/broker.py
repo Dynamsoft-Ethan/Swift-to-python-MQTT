@@ -1,6 +1,8 @@
 import asyncio
 import hbmqtt.broker as mqtt_broker
 import logging
+from host_address import host_ip, port
+
 
 logger = logging.getLogger(__name__)
 config = {
@@ -8,7 +10,7 @@ config = {
         'default': {
             'type': 'tcp',
             # your ip and port
-            'bind': '192.168.8.207:1883'    # 0.0.0.0:1883
+            'bind': f'{host_ip}:{port}'    # 0.0.0.0:1883
         }
     },
     'sys_interval': 10,

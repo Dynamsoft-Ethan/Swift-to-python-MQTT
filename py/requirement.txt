@@ -1,0 +1,6 @@
+paho-mqtt ==1.6.1
+hbmqtt ==0.9.6
+asyncio ==3.4.3
+websockets ==10.4
+pyautogui ==0.9.53
+pyperclip ==1.8.2
