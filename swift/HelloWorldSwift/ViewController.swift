@@ -14,7 +14,9 @@ class ViewController: UIViewController, DBRTextResultListener {
     var dce:DynamsoftCameraEnhancer!
     var dceView:DCECameraView!
     var barcodeReader:DynamsoftBarcodeReader!
-    var mqttClient = CocoaMQTT(clientID: "1234", host: "192.168.8.207", port: 1883)
+    
+    //define your host and topic here:
+    var mqttClient = CocoaMQTT(clientID: "myID", host: "192.168.8.207", port: 1883)
     var topic = "topic/test"
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +36,9 @@ class ViewController: UIViewController, DBRTextResultListener {
         
         //Create a camera module for video barcode scanning. In this section Dynamsoft Camera Enhancer (DCE) will handle the camera settings.
         configurationDCE()
+        
+        // Connect to the MQTT broker
+        mqttClient.connect()
     }
     
     func configurationDBR() {
@@ -73,8 +78,7 @@ class ViewController: UIViewController, DBRTextResultListener {
         barcodeReader.startScanning()
         // Create a new MQTT client with a unique identifier
 
-        // Connect to the MQTT broker
-        mqttClient.connect()
+
 
     }
     
