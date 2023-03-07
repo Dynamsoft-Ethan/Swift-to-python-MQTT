@@ -3,16 +3,16 @@
 Turn your phones into a remote barcode scanner that scans barcodes to desktop devices.
 
 ## Installation
-1. python install:
+1. python install:<br />
 `
-cd ./py
-pipenv shell
-pipenv install
+cd ./py<br />
+pipenv shell<br />
+pipenv install<br />
 `
-or
+or<br />
 `
-cd ./py
-pip install -r requirrment.txt
+cd ./py<br />
+pip install -r requirrment.txt<br />
 `
 
 2. swift install:
@@ -28,8 +28,8 @@ pod install
 ## run
 
 `
-cd ./py
-python ./run.py
+cd ./py<br />
+python ./run.py<br />
 `
 
 ## video demo
