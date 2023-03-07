@@ -14,7 +14,7 @@ Turn your phones into a remote barcode scanner that scans barcodes to desktop de
 or:
 ```
     cd ./py
-    pip install -r requirrment.txt
+    pip install -r requirement.txt
 ```
 
 2. swift install:
