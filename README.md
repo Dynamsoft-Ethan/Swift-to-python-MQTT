@@ -2,7 +2,7 @@
 
 Turn your phones into a remote barcode scanner that scans barcodes to desktop devices.
 
-## recommand version
+## recommend version
 python 3.8
 
 ## Installation
