@@ -8,6 +8,8 @@
 import UIKit
 import CocoaMQTT
 import Foundation
+import DynamsoftCameraEnhancer
+import DynamsoftBarcodeReader
 
 class ViewController: UIViewController, DBRTextResultListener {
     
@@ -56,6 +58,7 @@ class ViewController: UIViewController, DBRTextResultListener {
         */
     }
     
+
     func configurationDCE() {
         //Initialize a camera view for previewing video.
         dceView = DCECameraView.init(frame: self.view.bounds)
@@ -63,7 +66,23 @@ class ViewController: UIViewController, DBRTextResultListener {
 
         // Initialize the Camera Enhancer with the camera view.
         dce = DynamsoftCameraEnhancer.init(view: dceView)
-
+        
+        
+        //camera UI
+        // scan regio https://www.dynamsoft.com/camera-enhancer/docs/programming/ios/primary-api/camera-enhancer.html#setscanregion
+        
+        let scanRegion = iRegionDefinition()
+        scanRegion.regionTop = 25
+        scanRegion.regionBottom = 75
+        scanRegion.regionLeft = 25
+        scanRegion.regionRight = 75
+        scanRegion.regionMeasuredByPercentage = 1
+        dce.setScanRegion(scanRegion, error: nil)
+        
+        
+        //other UI customizations: https://www.dynamsoft.com/camera-enhancer/docs/programming/ios/primary-api/camera-enhancer.html#enablefeatures:~:text=the%20camera%20enhancer.-,Basic%20Camera%20Control%20Methods%20Summary,-Method
+        
+        
         // Open the camera to get video streaming.
         dce.open()
 
